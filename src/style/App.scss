@@ -1,7 +1,13 @@
 // Файл с общими стилями
 
 @import "./variables";
+body {
+  font-family: "PT Sans", sans-serif;
+}
 
 // Подключение модулей со стилями для компонент
 
 @import "../components/start-test-popup/start-test-popup"; // Попап для начала теста
+@import "../components/test-field/test-field"; // Экран самого теста: текст и все остальные элементы
+@import "../components/letter-from-text/letter-from-text"; // Буква из текста
+@import "../components/test-page/test-page"; // Страница целиком

@@ -17,3 +17,21 @@ export const beginToPrint = {
     beginTest: true,
   },
 };
+
+export const toNextLetter = (letterIndex) => async (dispatch) => {
+  dispatch({
+    type: "NEXT_LETTER",
+    payload: {
+      currentLetter: letterIndex,
+    },
+  });
+};
+
+export const newMistake = (mistakeCounter) => async (dispatch) => {
+  dispatch({
+    type: "ADD_MISTAKE",
+    payload: {
+      mistakes: mistakeCounter,
+    },
+  });
+};

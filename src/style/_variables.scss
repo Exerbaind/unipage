@@ -2,8 +2,9 @@
 
 $cMainText: #ab47bc;
 $cText: #424242;
-
 $cButton: rgba(#ab47bc, 1);
+
+$sBorderRadius: 10px;
 
 // Шаблоны
 
@@ -11,7 +12,7 @@ $cButton: rgba(#ab47bc, 1);
   color: white;
   background-color: $cButton;
   border: none;
-  border-radius: 10px;
+  border-radius: $sBorderRadius;
   transition: 0.3s;
   outline: none;
   cursor: pointer;

@@ -1,0 +1,22 @@
+.letter-unset {
+  color: $cText;
+}
+.letter-passed {
+  color: #64dd17;
+  font-weight: bold;
+}
+
+.letter-wrong {
+  color: white;
+  background-color: #d50000;
+  border-radius: $sBorderRadius;
+  padding: 3px;
+  font-size: 20px;
+}
+.letter-current {
+  color: white;
+  background-color: $cMainText;
+  border-radius: $sBorderRadius;
+  padding: 3px;
+  font-size: 20px;
+}

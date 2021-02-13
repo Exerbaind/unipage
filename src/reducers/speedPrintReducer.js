@@ -19,6 +19,16 @@ const gamesReducer = (state = initialState, action) => {
         ...state,
         beginTest: action.payload.beginTest,
       };
+    case "NEXT_LETTER":
+      return {
+        ...state,
+        currentLetter: action.payload.currentLetter,
+      };
+    case "ADD_MISTAKE":
+      return {
+        ...state,
+        mistakes: action.payload.mistakes,
+      };
     default:
       return {
         ...state,

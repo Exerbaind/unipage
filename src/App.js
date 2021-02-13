@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 // Стили
 
@@ -12,16 +12,27 @@ import { loadText } from "./actions/speedPrintAction";
 // Компоненты
 
 import StartTextPopup from "./components/start-test-popup/StartTestPopup";
+import TestPage from "./components/test-page/TestPage";
 
 function App() {
   const dispatch = useDispatch();
-  const beginTrigger = useSelector((state) => state.appParameters.beginTest);
+
+  // Boolean для начала теста
+
+  const startAppTrigger = useSelector((state) => state.appParameters.beginTest);
+
+  // Загрузка текста с API
 
   useEffect(() => {
     dispatch(loadText());
-  }, [dispatch]);
+  }, []);
 
-  return <div className="App">{beginTrigger || <StartTextPopup />}</div>;
+  return (
+    <div className="App">
+      {startAppTrigger || <StartTextPopup />}
+      <TestPage />
+    </div>
+  );
 }
 
 export default App;
