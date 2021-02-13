@@ -1,0 +1,34 @@
+.pop-up__wrapper {
+  position: fixed;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.pop-up__container {
+  max-width: 600px;
+  max-height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px 40px;
+  text-align: center;
+}
+.pop-up__title {
+  font-size: 36px;
+
+  color: $cMainText;
+  margin-bottom: 10px;
+}
+.pop-up__sub-title {
+  color: $cText;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+.pop-up__start-button {
+  @include button;
+}

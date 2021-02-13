@@ -1,0 +1,64 @@
+.pop-up__wrapper {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+.pop-up__container {
+  max-width: 600px;
+  max-height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.pop-up__title {
+  font-size: 36px;
+  color: #ab47bc;
+  margin-bottom: 10px;
+}
+
+.pop-up__sub-title {
+  color: #424242;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.pop-up__start-button {
+  color: white;
+  background-color: #ab47bc;
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.pop-up__start-button:hover {
+  opacity: 0.7;
+}
+
+.pop-up__start-button:active {
+  opacity: 1;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(142, 178, 205, 0.7) inset;
+          box-shadow: 0px 0px 20px 0px rgba(142, 178, 205, 0.7) inset;
+}
+/*# sourceMappingURL=App.css.map */

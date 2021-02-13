@@ -1,0 +1,28 @@
+// Переменные
+
+$cMainText: #ab47bc;
+$cText: #424242;
+
+$cButton: rgba(#ab47bc, 1);
+
+// Шаблоны
+
+@mixin button {
+  color: white;
+  background-color: $cButton;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  font-size: 18px;
+  margin-top: 20px;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 1;
+    box-shadow: 0px 0px 20px 0px rgba(142, 178, 205, 0.7) inset;
+  }
+}
