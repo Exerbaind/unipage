@@ -34,6 +34,7 @@ const SymbolsPerMinute = () => {
         alt="Скорость печати"
         className="small-block__icon"
       />
+      <p className="small-block__title">Скорость</p>
       <p className="small-block__text">
         {speedOfTyping} <span>зн./мин</span>
       </p>

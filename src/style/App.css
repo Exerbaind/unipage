@@ -171,6 +171,14 @@ body {
   height: 100px;
 }
 
+.small-block__title {
+  color: #ab47bc;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
 .small-block__text {
   font-size: 24px;
   margin-top: 10px;

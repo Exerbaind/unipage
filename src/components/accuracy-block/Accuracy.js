@@ -29,6 +29,7 @@ const Accuracy = () => {
         alt="Скорость печати"
         className="small-block__icon"
       />
+      <p className="small-block__title">Точность</p>
       <p className="small-block__text">
         {typingAccuracy.toFixed(2)}
         <span>%</span>
