@@ -1,0 +1,20 @@
+.small-block {
+  background-color: white;
+  color: $cText;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 40px;
+  box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.2);
+  border-radius: $sBorderRadius;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.small-block__icon {
+  height: 100px;
+}
+.small-block__text {
+  font-size: 24px;
+  margin-top: 10px;
+}

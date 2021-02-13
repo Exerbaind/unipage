@@ -1,7 +1,11 @@
 import LetterFromText from "../letter-from-text/LetterFromText";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { toNextLetter, newMistake } from "../../actions/speedPrintAction";
+import {
+  toNextLetter,
+  newMistake,
+  startTest,
+} from "../../actions/speedPrintAction";
 
 const TextField = () => {
   const dispatch = useDispatch();
@@ -14,6 +18,7 @@ const TextField = () => {
   );
 
   function letterValidate(e) {
+    dispatch(startTest);
     if (
       (e.keyCode >= 65 && e.keyCode <= 90) ||
       e.keyCode === 188 ||

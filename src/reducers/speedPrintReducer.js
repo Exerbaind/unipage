@@ -5,6 +5,7 @@ const initialState = {
   speed: 0,
   typingAccuracy: 100,
   beginTest: false,
+  isStarted: false,
 };
 
 const gamesReducer = (state = initialState, action) => {
@@ -14,10 +15,15 @@ const gamesReducer = (state = initialState, action) => {
         ...state,
         commonText: action.payload.commonText.join("").split(""),
       };
-    case "START_TEST":
+    case "TO_TEST":
       return {
         ...state,
         beginTest: action.payload.beginTest,
+      };
+    case "START_TEST":
+      return {
+        ...state,
+        isStarted: action.payload.isStarted,
       };
     case "NEXT_LETTER":
       return {
@@ -28,6 +34,16 @@ const gamesReducer = (state = initialState, action) => {
       return {
         ...state,
         mistakes: action.payload.mistakes,
+      };
+    case "COUNT_SYMBOLS":
+      return {
+        ...state,
+        speed: action.payload.speed,
+      };
+    case "COUNT_ACCURACY":
+      return {
+        ...state,
+        typingAccuracy: action.payload.typingAccuracy,
       };
     default:
       return {

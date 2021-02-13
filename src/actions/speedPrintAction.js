@@ -12,9 +12,15 @@ export const loadText = () => async (dispatch) => {
 };
 
 export const beginToPrint = {
-  type: "START_TEST",
+  type: "TO_TEST",
   payload: {
     beginTest: true,
+  },
+};
+export const startTest = {
+  type: "START_TEST",
+  payload: {
+    isStarted: true,
   },
 };
 
@@ -32,6 +38,28 @@ export const newMistake = (mistakeCounter) => async (dispatch) => {
     type: "ADD_MISTAKE",
     payload: {
       mistakes: mistakeCounter,
+    },
+  });
+};
+
+export const symbolsPerMinute = (numberOfSymbols, timer) => async (
+  dispatch
+) => {
+  dispatch({
+    type: "COUNT_SYMBOLS",
+    payload: {
+      speed: Math.ceil((numberOfSymbols / timer) * 60),
+    },
+  });
+};
+
+export const coutAccuracy = (numberOfMistakes, numberOfSymbols) => async (
+  dispatch
+) => {
+  dispatch({
+    type: "COUNT_ACCURACY",
+    payload: {
+      typingAccuracy: 100 - (numberOfMistakes * 100) / numberOfSymbols,
     },
   });
 };

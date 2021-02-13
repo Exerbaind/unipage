@@ -1,5 +1,5 @@
 .text-container {
-  max-width: 1200px;
+  width: 1200px;
   background-color: white;
   color: $cText;
   font-size: 20px;
@@ -7,4 +7,7 @@
   padding: 20px 40px;
   box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.2);
   border-radius: $sBorderRadius;
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
 }
