@@ -1,4 +1,24 @@
-# Getting Started with Create React App
+# Тренажер слепой печати
+
+## Как развернуть проект
+
+Для начала его потребуется скачать.
+
+Как только вы скачаете проект себе на компьютер,
+Вам необходимо будет открыть его в редакторе кода и запустить команду:
+
+### `npm install`
+
+Полсе того, как все зависимости установятся (папка node_modules),
+Запустите команду:
+
+### `npm start`
+
+Поздравляю!
+Теперь вы сможете потыкать и потестировать приложения в браузере!
+Увидеть то, что разработчик хотел, чтобы вы увидели.
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +87,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
