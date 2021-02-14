@@ -14,7 +14,10 @@ const gamesReducer = (state = initialState, action) => {
     case "FETCH_COMMON_TEXT":
       return {
         ...state,
-        commonText: action.payload.commonText.join("").split(""),
+        commonText: action.payload.commonText
+          .join("")
+          .replace(/ {1,}/g, " ")
+          .split(""),
       };
     case "TO_TEST":
       return {
