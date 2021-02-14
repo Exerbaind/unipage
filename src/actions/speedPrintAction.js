@@ -63,3 +63,10 @@ export const coutAccuracy = (numberOfMistakes, numberOfSymbols) => async (
     },
   });
 };
+
+export const endTestAction = {
+  type: "END_TEST",
+  payload: {
+    endTest: true,
+  },
+};

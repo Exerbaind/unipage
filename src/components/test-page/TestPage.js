@@ -5,10 +5,12 @@ import Accuracy from "../accuracy-block/Accuracy";
 const TestPage = () => {
   return (
     <div className="test-page">
-      <TextField />
-      <div className="test-page__middle-results">
-        <SymbolsPerMinute />
-        <Accuracy />
+      <div className="test-page__container">
+        <TextField />
+        <div className="test-page__middle-results">
+          <SymbolsPerMinute />
+          <Accuracy />
+        </div>
       </div>
     </div>
   );

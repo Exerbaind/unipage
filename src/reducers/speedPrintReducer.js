@@ -6,6 +6,7 @@ const initialState = {
   typingAccuracy: 100,
   beginTest: false,
   isStarted: false,
+  endTest: false,
 };
 
 const gamesReducer = (state = initialState, action) => {
@@ -44,6 +45,11 @@ const gamesReducer = (state = initialState, action) => {
       return {
         ...state,
         typingAccuracy: action.payload.typingAccuracy,
+      };
+    case "END_TEST":
+      return {
+        ...state,
+        endTest: action.payload.endTest,
       };
     default:
       return {

@@ -5,6 +5,7 @@ import {
   toNextLetter,
   newMistake,
   startTest,
+  endTestAction,
 } from "../../actions/speedPrintAction";
 
 const TextField = () => {
@@ -18,6 +19,7 @@ const TextField = () => {
   );
 
   function letterValidate(e) {
+    console.log(commonText.length);
     dispatch(startTest);
     if (
       (e.keyCode >= 65 && e.keyCode <= 90) ||
@@ -37,7 +39,15 @@ const TextField = () => {
     }
   }
 
+  function endTest() {
+    if (currentLetterIndex === commonText.length) {
+      console.log("end");
+      dispatch(endTestAction);
+    }
+  }
+
   useEffect(() => {
+    commonText.length && endTest();
     window.addEventListener("keydown", letterValidate);
     return () => {
       window.removeEventListener("keydown", letterValidate);

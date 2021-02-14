@@ -10,6 +10,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%;
+  &:last-child {
+    margin-top: 20px;
+  }
 }
 .small-block__icon {
   height: 100px;
