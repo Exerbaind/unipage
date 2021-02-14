@@ -1,9 +1,10 @@
 import { useSelector, useDispatch } from "react-redux";
-import { useEffect, useState } from "react";
-import { coutAccuracy } from "../../actions/speedPrintAction";
+import { useEffect } from "react";
 
-// Icon
+// Экшены
+import { countAccuracy } from "../../actions/speedPrintAction";
 
+// Иконки
 import accuracyIcon from "../../assets/accuracy.svg";
 
 const Accuracy = () => {
@@ -19,7 +20,7 @@ const Accuracy = () => {
   const numberOfMistakes = useSelector((state) => state.appParameters.mistakes);
 
   useEffect(() => {
-    isStarted && dispatch(coutAccuracy(numberOfMistakes, numberOfSymbols));
+    isStarted && dispatch(countAccuracy(numberOfMistakes, numberOfSymbols));
   }, [numberOfMistakes]);
 
   return (

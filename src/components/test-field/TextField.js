@@ -1,12 +1,16 @@
-import LetterFromText from "../letter-from-text/LetterFromText";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
+
+// Экшены
 import {
   toNextLetter,
   newMistake,
   startTest,
   endTestAction,
 } from "../../actions/speedPrintAction";
+
+// Компоненты
+import LetterFromText from "../letter-from-text/LetterFromText";
 
 const TextField = () => {
   const dispatch = useDispatch();
@@ -18,8 +22,8 @@ const TextField = () => {
     (state) => state.appParameters.currentLetter
   );
 
+  // Основная проверка на верно/неверно введенные символы, ограничение на воод определенных символов
   function letterValidate(e) {
-    console.log(commonText.length);
     dispatch(startTest);
     if (
       (e.keyCode >= 65 && e.keyCode <= 90) ||
@@ -41,7 +45,6 @@ const TextField = () => {
 
   function endTest() {
     if (currentLetterIndex === commonText.length) {
-      console.log("end");
       dispatch(endTestAction);
     }
   }

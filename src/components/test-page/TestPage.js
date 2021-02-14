@@ -1,3 +1,4 @@
+// Компоненты
 import TextField from "../test-field/TextField";
 import SymbolsPerMinute from "../symbols-per-minutes/SymbolsPerMinute";
 import Accuracy from "../accuracy-block/Accuracy";

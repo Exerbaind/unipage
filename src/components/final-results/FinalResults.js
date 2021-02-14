@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 
+// Иконки
 import accuracyIcon from "../../assets/accuracy.svg";
 import speedIcon from "../../assets/speed.svg";
 

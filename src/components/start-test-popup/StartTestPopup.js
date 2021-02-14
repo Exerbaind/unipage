@@ -1,10 +1,11 @@
 import { useDispatch } from "react-redux";
 
-import { beginToPrint } from "../../actions/speedPrintAction";
+// Экшены
+import { toTestScreen } from "../../actions/speedPrintAction";
 const StartTestPopup = () => {
   const dispatch = useDispatch();
   const startTest = () => {
-    dispatch(beginToPrint);
+    dispatch(toTestScreen);
   };
   return (
     <div className="pop-up__wrapper">

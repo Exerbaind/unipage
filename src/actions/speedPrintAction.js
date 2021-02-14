@@ -11,12 +11,13 @@ export const loadText = () => async (dispatch) => {
   });
 };
 
-export const beginToPrint = {
+export const toTestScreen = {
   type: "TO_TEST",
   payload: {
     beginTest: true,
   },
 };
+
 export const startTest = {
   type: "START_TEST",
   payload: {
@@ -53,7 +54,7 @@ export const symbolsPerMinute = (numberOfSymbols, timer) => async (
   });
 };
 
-export const coutAccuracy = (numberOfMistakes, numberOfSymbols) => async (
+export const countAccuracy = (numberOfMistakes, numberOfSymbols) => async (
   dispatch
 ) => {
   dispatch({

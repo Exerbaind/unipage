@@ -1,8 +1,11 @@
 import { useSelector } from "react-redux";
+
 const LetterFromText = (props) => {
   const currentLetterIndex = useSelector(
     (state) => state.appParameters.currentLetter
   );
+
+  // Функция, которая добавляет класс символу
   function letterState() {
     if (props.letterIndex === currentLetterIndex) {
       if (props.isMistake) {

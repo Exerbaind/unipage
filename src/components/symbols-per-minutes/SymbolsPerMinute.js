@@ -1,9 +1,10 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
+
+// Экшены
 import { symbolsPerMinute } from "../../actions/speedPrintAction";
 
-// Icon
-
+// Иконки
 import speedIcon from "../../assets/speed.svg";
 
 const SymbolsPerMinute = () => {

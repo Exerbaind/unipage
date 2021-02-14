@@ -9,7 +9,7 @@ body {
 
 @import "../components/start-test-popup/start-test-popup"; // Попап для начала теста
 @import "../components/test-field/text-field"; // Экран самого теста: текст и все остальные элементы
-@import "../components/letter-from-text/letter-from-text"; // Буква из текста
+@import "../components/letter-from-text/letter-from-text"; // Символ из текста
 @import "../components/test-page/test-page"; // Страница целиком
-@import "../components/symbols-per-minutes/symbol-per-minute"; // Количество символов в минуту
+@import "./small-blocks"; // 2 блока, в который показывается промежуточная статистика (скорость, точность)
 @import "../components/final-results/final-results"; // Финальное окно с результатами
