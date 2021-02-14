@@ -57,7 +57,7 @@ const FinalResults = () => {
             текста!
           </p>
         )}
-        {typingAccuracy > 80 && (
+        {typingAccuracy >= 80 && (
           <p className="final-results__congratulations">
             А точности позавидует даже сам Соколиный Глаз!
           </p>
