@@ -57,6 +57,16 @@ const FinalResults = () => {
             текста!
           </p>
         )}
+        {typingAccuracy > 80 && (
+          <p className="final-results__congratulations">
+            А точности позавидует даже сам Соколиный Глаз!
+          </p>
+        )}
+        {typingAccuracy < 80 && (
+          <p className="final-results__congratulations">
+            Даже Сильвана иногда промахивается, главное, есть куда расти!
+          </p>
+        )}
         <button className="final-results__repeat-button" onClick={repeatTest}>
           Попробовать еще раз
         </button>
