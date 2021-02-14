@@ -42,14 +42,14 @@ const FinalResults = () => {
             вырастут!
           </p>
         )}
-        {speedOfTyping > 100 && (
+        {speedOfTyping >= 100 && speedOfTyping < 200 && (
           <p className="final-results__congratulations">
             Поздравляю!
             <br />
             Твои навыки в наборе текста очень неплохи!
           </p>
         )}
-        {speedOfTyping > 200 && (
+        {speedOfTyping >= 200 && (
           <p className="final-results__congratulations">
             Вот это да!
             <br />
