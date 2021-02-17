@@ -6,6 +6,7 @@ import "./style/App.css";
 // Redux
 import { useDispatch, useSelector } from "react-redux";
 import { loadText } from "./actions/speedPrintAction";
+import { loadSongs } from "./actions/audioPlayerAction";
 
 // Компоненты
 import StartTextPopup from "./components/start-test-popup/StartTestPopup";
@@ -21,6 +22,7 @@ function App() {
   // Загрузка текста с API
   useEffect(() => {
     dispatch(loadText());
+    dispatch(loadSongs);
   }, []);
 
   return (

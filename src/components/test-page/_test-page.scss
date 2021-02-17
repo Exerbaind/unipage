@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  flex-direction: column;
   @media screen and (max-width: 600px) {
     align-items: start;
   }
@@ -10,6 +11,10 @@
 .test-page__container {
   display: flex;
   width: 1200px;
+  margin-top: 20px;
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
   @media screen and (max-width: 600px) {
     flex-direction: column;
   }

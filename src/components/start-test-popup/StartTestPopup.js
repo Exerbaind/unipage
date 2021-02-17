@@ -2,10 +2,12 @@ import { useDispatch } from "react-redux";
 
 // Экшены
 import { toTestScreen } from "../../actions/speedPrintAction";
+import { isPlayingHandler } from "../../actions/audioPlayerAction";
 const StartTestPopup = () => {
   const dispatch = useDispatch();
   const startTest = () => {
     dispatch(toTestScreen);
+    dispatch(isPlayingHandler(true));
   };
   return (
     <div className="pop-up__wrapper">

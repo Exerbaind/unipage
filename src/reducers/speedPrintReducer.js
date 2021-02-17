@@ -9,7 +9,7 @@ const initialState = {
   endTest: false,
 };
 
-const gamesReducer = (state = initialState, action) => {
+const speedPrintReducer = (state = initialState, action) => {
   switch (action.type) {
     case "FETCH_COMMON_TEXT":
       return {
@@ -61,4 +61,4 @@ const gamesReducer = (state = initialState, action) => {
   }
 };
 
-export default gamesReducer;
+export default speedPrintReducer;

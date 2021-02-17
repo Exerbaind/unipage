@@ -1,0 +1,51 @@
+.audio-player {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  border-radius: 10px;
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.2);
+  }
+}
+.song-control {
+  display: flex;
+  width: 150px;
+  justify-content: space-around;
+  margin-top: 10px;
+  img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      transform: scale(0.95);
+      opacity: 1;
+    }
+  }
+  .prev-track {
+    transform: rotate(180deg);
+    &:active {
+      transform: rotate(180deg) scale(0.95);
+      opacity: 1;
+    }
+  }
+}
+
+.song-name {
+  text-align: center;
+}
+.song-name__name {
+  color: $cText;
+  font-size: 20px;
+}
+.song-name__artist {
+  color: $cMainText;
+  font-size: 16px;
+}
